@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>password</title>
+</head>
+<script>
+document.body.style.display = "none"; 
+
+var inputText = prompt("パスワードを入力して下さい☆","");
+var x = [];
+var len = inputText.length;
+
+for(var i = 0 ; i <len; i++) {
+   x[i] = inputText.charCodeAt(i);
+}
+
+if(x == '12358,12435,12371'){
+   document.body.style.display = "block";
+}else{
+   location.href = "https://www.google.co.jp/";
+}
+</script>
+<body>
+</body>
+</html>
