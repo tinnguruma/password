@@ -2,24 +2,25 @@
 <head>
 <meta charset="UTF-8">
 <title>password</title>
+   
+   <script language="JavaScript" type="text/javascript">
+　   function nextPage(){
+　　  　pwd=document.form1.pass.value;
+　　　  location.href=pwd+".html";
+　　  }
+   </script>
+   
+   
 </head>
 
-document.body.style.display = "none"; 
-
-var inputText = prompt("パスワードを入力して下さい☆","");
-var x = [];
-var len = inputText.length;
-
-for(var i = 0 ; i <len; i++) {
-   x[i] = inputText.charCodeAt(i);
-}
-
-if(x == '12358,12435,12371'){
-   document.body.style.display = "block";
-}else{
-   location.href = "https://www.google.co.jp/";
-}
-
 <body>
+   
+   
+   <form name="form1">
+   <input type="password" name="pass">
+   <input type="button" value="パスワード" onClick="nextPage();">
+   </form>
+   
+   
 </body>
 </html>
